@@ -13,6 +13,6 @@
 </div>
 <div class="row">
     <div class="col-md-6">
-            <app-main-list [receivedGroup]= "listGroup"></app-main-list>
+            <app-main-list [receivedGroup]= "listGroup" (item)="onFinalDelete($event)"></app-main-list>
     </div>
 </div>

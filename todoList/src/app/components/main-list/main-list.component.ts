@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-main-list',
@@ -8,7 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MainListComponent implements OnInit {
 
   @Input() receivedGroup: string[];
+  @Output() item = new EventEmitter<string>();
 
+  onDeleteItem(itemToDelete: string) {
+    console.log(itemToDelete);
+    
+    this.item.emit(itemToDelete);
+  }
 
 
   constructor() { }
