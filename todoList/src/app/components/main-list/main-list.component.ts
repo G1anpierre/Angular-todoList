@@ -10,12 +10,15 @@ export class MainListComponent implements OnInit {
 
   @Input() receivedGroup: string[];
   @Output() item = new EventEmitter<string>();
+  @Output() itemDone = new EventEmitter<{elementDone: string, elementActive: boolean}>();
 
   onDeleteItem(itemToDelete: string) {
     console.log(itemToDelete);
     
     this.item.emit(itemToDelete);
   }
+
+  
 
 
   constructor() { }

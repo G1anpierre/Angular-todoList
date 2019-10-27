@@ -1,6 +1,16 @@
 
 
-<a href="#" class="list-group-item">{{input}} <span class="glyphicon glyphicon-remove"  (click)="onDelete()"></span></a>
+<li href="#" 
+class="list-group-item" 
+[class.isDone] = "isClick"
+> {{input}} 
+<span class="glyphicon glyphicon-remove"  
+        (click)="onDelete()">
+</span> 
+<span class="glyphicon glyphicon-ok" 
+        (click)="onDone()" >
+</span>
+</li>
 
 
 <!-- I could add the class active to make it apeear blue and looks

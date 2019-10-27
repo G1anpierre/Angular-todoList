@@ -9,6 +9,7 @@ import { CockpitComponent } from './components/cockpit/cockpit.component';
 import { MainListComponent } from './components/main-list/main-list.component';
 import { ItemListComponent } from './components/main-list/item-list/item-list.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ToogleDoneComponent } from './components/toogle-done/toogle-done.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeaderComponent } from './components/header/header.component';
     CockpitComponent,
     MainListComponent,
     ItemListComponent,
-    HeaderComponent
+    HeaderComponent,
+    ToogleDoneComponent
   ],
   imports: [
     BrowserModule,

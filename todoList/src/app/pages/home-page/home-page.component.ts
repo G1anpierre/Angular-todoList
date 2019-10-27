@@ -19,6 +19,8 @@ export class HomePageComponent implements OnInit {
     this.listGroup.splice(index, 1);
   }
 
+  
+
   constructor() { }
 
   ngOnInit() {
