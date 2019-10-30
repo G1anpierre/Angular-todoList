@@ -1,10 +1,11 @@
 
-<div class="input-group">
-    <input [(ngModel)]="inputData" type="text" class="form-control" aria-label="..." placeholder="Write a To-Do">
-        <div class="input-group-btn">
-            <button (click)="onClick(inputData)" class="btn btn-primary">Add</button>
-        </div>
-</div>
-
+<form >
+    <div class="input-group">
+        <input required [(ngModel)]="inputData" name="inputTodo" #inputObject = "ngModel" (change)= "onShowInput(inputObject)" type="text" class="form-control" aria-label="..." placeholder="Write a To-Do">
+            <div class="input-group-btn">
+                <button (click)="onClick(inputData)" class="btn btn-primary" [disabled]= "!inputObject.valid">Add</button>
+            </div>
+    </div>
+</form>
 
     

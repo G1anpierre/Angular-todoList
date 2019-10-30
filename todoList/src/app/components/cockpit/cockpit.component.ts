@@ -14,6 +14,9 @@ export class CockpitComponent implements OnInit {
     this.inputTyped.emit(dataTyped);
   }
 
+  onShowInput(i){
+    console.log(i);
+  }
 
   constructor() { }
 
