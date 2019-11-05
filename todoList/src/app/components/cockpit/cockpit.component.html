@@ -2,12 +2,7 @@
 <form >
     <div class="input-group">
         <input 
-<<<<<<< HEAD
-        required 
-        [(ngModel)]="inputData" 
-=======
         required [(ngModel)]="inputData" 
->>>>>>> validation
         name="inputTodo" 
         #inputObject = "ngModel" 
         (change)= "onShowInput(inputObject)" 
@@ -19,13 +14,7 @@
                 <button 
                 (click)="onClick(inputData)" 
                 class="btn btn-primary" 
-<<<<<<< HEAD
-                [disabled]= "!inputObject.valid">
-                Add
-                </button>
-=======
                 [disabled]= "!inputObject.valid">Add</button>
->>>>>>> validation
             </div>
     </div>
 </form>
