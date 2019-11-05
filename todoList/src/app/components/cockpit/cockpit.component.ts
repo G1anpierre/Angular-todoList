@@ -8,10 +8,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class CockpitComponent implements OnInit {
   
   @Output() inputTyped = new EventEmitter<string>();
+  inputData: string
 
   onClick(dataTyped: string){
     console.log(dataTyped);
     this.inputTyped.emit(dataTyped);
+    this.inputData = "";
+
   }
 
   onShowInput(i){
