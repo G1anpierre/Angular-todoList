@@ -1,6 +1,6 @@
 <li href="#"  class="list-group-item" [class.isDone] = "isClick"
 > {{input}} 
-<app-remove></app-remove>
+<app-remove (delete)=onDelete()></app-remove>
 <span class="glyphicon glyphicon-ok" [class.iconCheck] = "isClick" (click)="onDone()" ></span>
 </li>
 
