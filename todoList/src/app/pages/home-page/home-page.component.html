@@ -6,7 +6,9 @@
                     <div class="col-md-4 col-md-offset-4">
                         <h1>{{ title }}</h1>
                         <div class="container">
-                                <app-cockpit (inputTyped)="dataInputTyped($event)"></app-cockpit>
+                                <app-cockpit (inputTyped)="dataInputTyped($event)">
+                                    <ng-container class="add">Add</ng-container>
+                                </app-cockpit>
                         </div>
                     </div>
                 </div>

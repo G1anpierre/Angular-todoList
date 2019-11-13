@@ -1,17 +1,7 @@
-
-
-<li href="#" 
-class="list-group-item" 
-[class.isDone] = "isClick"
+<li href="#"  class="list-group-item" [class.isDone] = "isClick"
 > {{input}} 
-<span class="glyphicon glyphicon-remove"  
-      
-        (click)="onDelete()">
-</span> 
-<span class="glyphicon glyphicon-ok" 
-        [class.iconCheck] = "isClick"
-        (click)="onDone()" >
-</span>
+<app-remove></app-remove>
+<span class="glyphicon glyphicon-ok" [class.iconCheck] = "isClick" (click)="onDone()" ></span>
 </li>
 
 
