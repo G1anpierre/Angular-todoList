@@ -10,6 +10,7 @@ import { MainListComponent } from './components/main-list/main-list.component';
 import { ItemListComponent } from './components/main-list/item-list/item-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ToogleDoneComponent } from './components/toogle-done/toogle-done.component';
+import { RemoveComponent } from './shared/remove/remove.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ToogleDoneComponent } from './components/toogle-done/toogle-done.compon
     MainListComponent,
     ItemListComponent,
     HeaderComponent,
-    ToogleDoneComponent
+    ToogleDoneComponent,
+    RemoveComponent
   ],
   imports: [
     BrowserModule,

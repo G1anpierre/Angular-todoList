@@ -14,7 +14,9 @@
                 <button 
                 (click)="onClick(inputData)" 
                 class="btn btn-primary" 
-                [disabled]= "!inputObject.valid">Add</button>
+                [disabled]= "!inputObject.valid">
+                <ng-content select=".add"></ng-content>
+                </button>
             </div>
     </div>
 </form>
