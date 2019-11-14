@@ -10,7 +10,8 @@ export class HomePageComponent implements OnInit {
   listGroup: string[] = ['Build more Projects with Angular', 'Build more projects with Flexbox and Bootstrap', 'Go to the Gym', 'Go out to dance'];
 
   dataInputTyped(dataTyped2: string ) {
-    this.listGroup.push(dataTyped2);
+    // this.listGroup.push(dataTyped2);
+    this.listGroup = [...this.listGroup, dataTyped2];
   }
 
   onFinalDelete(itemTodo: string){
