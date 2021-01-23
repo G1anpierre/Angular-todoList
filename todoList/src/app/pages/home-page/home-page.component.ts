@@ -16,7 +16,6 @@ export class HomePageComponent implements OnInit {
 
   onFinalDelete(itemTodo: string){
     let index = this.listGroup.indexOf(itemTodo);
-    console.log(index);
     this.listGroup.splice(index, 1);
   }
 
